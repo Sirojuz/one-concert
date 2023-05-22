@@ -18,7 +18,7 @@
 }
 
 .container_in {
-    max-width: 1128px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -216,24 +216,19 @@
 
 /* section_cards_start*/
 
+.cards {
+    margin-bottom: 54px;
+}
+
 .top_10 {
-    width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
-.top_10_left {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.top_10_left_img {
+.top_10 img {
     margin-right: 15px;
 }
 
-.top_10_left_text h1 {
+.top_10 h1 {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 900;
@@ -242,56 +237,58 @@
     color: #FFD825;
 }
 
-.top_10_right {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* swipper_bootstrap */
+html,
+body {
+  position: relative;
+  height: 100%;
 }
 
-.icon_left {
-    transform: rotate(180deg);
-    margin-right: 8px;
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
 }
 
-.top_10_right h4 {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    color: #343434;
-    margin-left: 24px;
+.swiper {
+  width: 100%;
+  height: 100%;
 }
 
-/* cards_start */
-
-.top_card_wrapper {
-    display: flex;
-    gap: 20px;
-    margin-top: 50px;
-    padding-bottom: 67px;
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.top_card {
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.swipper_corusel img {
     position: relative;
-    max-width: 380px;
-}
-
-.top_card_img img {
-    max-width: 380px;
-    border-radius: 20px;
 }
 
 .top_card_text {
     width: 100%;
-    height: 210px;
+    height: 225px;
     padding: 20px;
     background-color: #404040;
     position: absolute;
-    top: 445px;
+    top: 400px;
     z-index: 2;
     border-radius: 0 0 20px 20px;
 }
-
 
 .top_text h1 {
     width: 100%;
@@ -300,6 +297,7 @@
     font-size: 33px;
     line-height: 40px;
     color: #fff;
+    text-align: start;
 }
 
 .top_text h4 {
@@ -308,6 +306,7 @@
     font-weight: 500;
     font-size: 22px;
     line-height: 40px;
+    text-align: start;
 }
 
 .top_text p {
@@ -316,6 +315,7 @@
     line-height: 19px;
     color: #7B809B;
     margin-bottom: 21px;
+    text-align: start;
 }
 
 .top_text button {
@@ -329,6 +329,7 @@
     background: #FFD825;
     border-radius: 18px;
 }
+
 
 .organation_wrapper {
     background-image: url("../images/orgo_bg_img.png");
